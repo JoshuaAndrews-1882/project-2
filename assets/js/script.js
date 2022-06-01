@@ -30,6 +30,10 @@ function getComputerChoice () {
             break;
         case 2:
             cChoice = 'scissors';
+        case 3:
+            cChoice = 'lizard';
+        case 4:
+            cChoice = 'spock';
     }
     computerChoice.innerHTML = cChoice
 };
@@ -68,7 +72,7 @@ function compareChoices() {
     }
     if (pChoice === 'paper' && cChoice === 'spock') {
         winner = "Paper disproves Spock, you win!";
-        win++;
+        won++;
     }
     if (pChoice === 'scissors' && cChoice === 'rock') {
         winner = "Scissors gets smashed by Rock, you lose!";
