@@ -19,7 +19,7 @@ gameChoices.forEach(gameChoice => gameChoice.addEventListener('click', (e) => {
 }))
 
 function getComputerChoice () {
-    const randomChoice = Math.floor(Math.random() * 3)
+    const randomChoice = Math.floor(Math.random() * 5)
 
     switch(randomChoice) {
         case 0:
@@ -36,31 +36,87 @@ function getComputerChoice () {
 
 function compareChoices() {
     if (pChoice === cChoice) {
-        winner = "It's a draw"   
+        winner = "Stalemate!"   
 }
     if (pChoice === 'rock'  && cChoice === 'paper') {
-        winner = "You lose";
+        winner = "Rock is covered by Paper, you lose!";
         lose++;
     }
     if (pChoice === 'rock' && cChoice === 'scissors') {
-        winner = "You win";
+        winner = "Rock crushes Scissors, you win!";
         won++;
     }
+    if (pChoice === 'rock' && cChoice === 'lizard') {
+        winner = "Rock crushes the Lizard, you win!";
+        won++;
+    }
+    if (pChoice === 'rock' && cChoice === 'spock') {
+        winner = "Rock is vaporized by Spock, you lose!";
+        lose++;
+    }
     if (pChoice === 'paper' && cChoice === 'rock') {
-        winner = "You win";
+        winner = "Paper covers Rock, you win!";
         won++;
     }
     if (pChoice === 'paper' && cChoice === 'scissors') {
-        winner = "You lose";
+        winner = "Paper is cut by Scissors, you lose!";
         lose++;
     }
+    if (pChoice === 'paper' && cChoice === 'lizard') {
+        winner = "Paper is eaten by the Lizard, you lose!";
+        lose++;
+    }
+    if (pChoice === 'paper' && cChoice === 'spock') {
+        winner = "Paper disproves Spock, you win!";
+        win++;
+    }
     if (pChoice === 'scissors' && cChoice === 'rock') {
-        winner = "You lose";
+        winner = "Scissors gets smashed by Rock, you lose!";
         lose++;
     }
     if (pChoice === 'scissors' && cChoice === 'paper') {
-        winner = "You win";
+        winner = "Scissors cuts Paper, you win!";
         won++;
+    }
+    if (pChoice === 'scissors' && cChoice === 'lizard') {
+        winner = "Scissors decapitates lizard, you win!";
+        won++;
+    }
+    if (pChoice === 'scissors' && cChoice === 'spock') {
+        winner = "Scissors are smashed by Spock, you lose!";
+        lose++;
+    }
+    if (pChoice === 'lizard' && cChoice === 'rock') {
+        winner = "Your lizard is crushed by Rock, you lose!";
+        lose++;
+    }
+    if (pChoice === 'lizard' && cChoice === 'paper') {
+        winner = "Your lizard eats the paper, you win!";
+        won++;
+    }
+    if (pChoice === 'lizard' && cChoice === 'scissors') {
+        winner = "Your lizard is decapitated by Scissors, you lose!";
+        lose++;
+    }
+    if (pChoice === 'lizard' && cChoice === 'spock') {
+        winner = "Your lizard poisons Spock, you win!";
+        won++;
+    }
+    if (pChoice === 'spock' && cChoice === 'rock') {
+        winner = "Spock vaporizes rock, you win!";
+        won++;
+    }
+    if (pChoice === 'spock' && cChoice === 'paper') {
+        winner = "Spock is disproved by Paper, you lose!";
+        lose++;
+    }
+    if (pChoice === 'spock' && cChoice === 'scissors') {
+        winner = "Spock smashed scissors, you win!";
+        won++;
+    }
+    if (pChoice === 'spock' && cChoice === 'lizard') {
+        winner = "Spock is poisoned by the Lizard, you lose!";
+        lose++;
     }
     gameResult.innerHTML = winner
 };
