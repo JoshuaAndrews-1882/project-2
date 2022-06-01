@@ -11,7 +11,6 @@ let result
 
 gameChoices.forEach(gameChoice => gameChoice.addEventListener('click', (e) => {
     pChoice = e.target.id
-    playerChoice.innerHTML = pChoice
     getComputerChoice()
     compareChoices()
     gameScore()
@@ -30,17 +29,18 @@ function getComputerChoice () {
             break;
         case 2:
             cChoice = 'scissors';
+            break;
         case 3:
             cChoice = 'lizard';
+            break;
         case 4:
             cChoice = 'spock';
     }
-    computerChoice.innerHTML = cChoice
 };
 
 function compareChoices() {
     if (pChoice === cChoice) {
-        winner = "Stalemate!"   
+        winner = "Stalemate, you picked the same";   
 }
     if (pChoice === 'rock'  && cChoice === 'paper') {
         winner = "Rock is covered by Paper, you lose!";
