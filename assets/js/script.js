@@ -15,6 +15,7 @@ gameChoices.forEach(gameChoice => gameChoice.addEventListener('click', (e) => {
     getComputerChoice()
     compareChoices()
     gameScore()
+    endGame()
 }))
 
 function getComputerChoice () {
@@ -67,4 +68,17 @@ function compareChoices() {
 function gameScore() {
     document.getElementById('won').innerHTML = won;
     document.getElementById('lose').innerHTML = lose;
+};
+
+function endGame() {
+    if (won === 10) {
+        document.getElementById('result').innerHTML = 'You win the game';
+        document.getElementById('won').innerHTML = 0;
+        document.getElementById('lose').innerHTML = 0;
+    }
+    if (lose === 10) {
+        document.getElementById('result').innerHTML = 'You lost the game';
+        document.getElementById('won').innerHTML = 0;
+        document.getElementById('lose').innerHTML = 0;
+    }  
 };
