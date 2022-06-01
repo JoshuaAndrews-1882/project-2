@@ -1,14 +1,12 @@
 const playerChoice = document.getElementById('player');
 const computerChoice = document.getElementById('computer');
 const gameResult = document.getElementById('result');
-const playerWin = document.getElementById('won');
-const computerWin = document.getElementById('lost');
 const gameChoices = document.querySelectorAll('button');
 
 let pChoice;
 let cChoice;
 let won = 0;
-let lost = 0;
+let lose = 0;
 let result
 
 gameChoices.forEach(gameChoice => gameChoice.addEventListener('click', (e) => {
@@ -16,7 +14,7 @@ gameChoices.forEach(gameChoice => gameChoice.addEventListener('click', (e) => {
     playerChoice.innerHTML = pChoice
     getComputerChoice()
     compareChoices()
-    
+    gameScore()
 }))
 
 function getComputerChoice () {
@@ -40,22 +38,33 @@ function compareChoices() {
         winner = "It's a draw"   
 }
     if (pChoice === 'rock'  && cChoice === 'paper') {
-        winner = "You lose"
+        winner = "You lose";
+        lose++;
     }
     if (pChoice === 'rock' && cChoice === 'scissors') {
-        winner = "You win"
+        winner = "You win";
+        won++;
     }
     if (pChoice === 'paper' && cChoice === 'rock') {
-        winner = "You win"
+        winner = "You win";
+        won++;
     }
     if (pChoice === 'paper' && cChoice === 'scissors') {
-        winner = "You lose"
+        winner = "You lose";
+        lose++;
     }
     if (pChoice === 'scissors' && cChoice === 'rock') {
-        winner = "You lose"
+        winner = "You lose";
+        lose++;
     }
     if (pChoice === 'scissors' && cChoice === 'paper') {
-        winner = "You win"
+        winner = "You win";
+        won++;
     }
     gameResult.innerHTML = winner
+};
+
+function gameScore() {
+    document.getElementById('won').innerHTML = won;
+    document.getElementById('lose').innerHTML = lose;
 };
