@@ -14,18 +14,45 @@
     width: 100vw;
 }
 
+/* title */
+
+.title > img {
+    display: block;
+    max-height: 20vh;
+    max-width: 80vw;
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+
 /* score area */
 
+.scores {
+    font-weight: 1000;
+}
+
 .score-area {
-    background-color: blue;
+    font-size: 1rem;
     padding-bottom: 20px;
     padding-top: 10px;
+}
+
+.space {
+    padding-bottom: 5px;
 }
 
 /* game area */
 
 .game-area {
     text-align: center;
+}
+
+/* result area */
+
+.result-area {
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 /* buttons */
