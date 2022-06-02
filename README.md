@@ -42,6 +42,7 @@ I thought a simple design was perfect for a simple game.
 ![Player Loses Game](assets/readme-images/lostgame.png)
 
  - __Player Choice__
+
    - The player has 5 choices to pick from, from left to right; Rock, Paper, Scissors, Lizard and Spock.
    - When picked it will then be matched against a random computer choice.
   ![Game Choices](assets/readme-images/choices.png)
@@ -51,8 +52,10 @@ I thought a simple design was perfect for a simple game.
 ### Validator Testing
 
   - __HTML__
+
   - No errors were found when checking on [w3c validator](http://jigsaw.w3.org/css-validator/validator?lang=en&profile=css3svg&uri=https%3A%2F%2Fjoshuaandrews-1882.github.io%2Fproject-2%2F&usermedium=all&vextwarning=&warning=1).
 - __CSS__
+
   - No errors were found when checking on [(Jigsaw) validator](http://jigsaw.w3.org/css-validator/validator?lang=en&profile=css3svg&uri=https%3A%2F%2Fjoshuaandrews-1882.github.io%2Fproject-2%2F&usermedium=all&vextwarning=&warning=1).
 
   ### Page Speed
@@ -71,8 +74,22 @@ I thought a simple design was perfect for a simple game.
 ![Desktop Web Speed](assets/readme-images/desktop.png)
 
 ### Personal Check
+
   - Used a PC, tablet and a mobile to check the game and everything is good.
 
 ### Unfixed Bugs
 
   - No known bugs
+
+## Deployment
+
+- __The website was deployed on GitHub pages, it is done as followed:__
+
+  - In the repository for the website to be published, click on settings of you repositories.
+  - Click on the pages tab in the left hand section.
+  - In Source change the branch to main, ensure root is selected next to it and then click save.
+  - A link will appear for your website, wait a few minutes and refresh, it should be ready.
+  - If it says ready but still not loading then wait a little longer, it will eventually load.
+  - Ensure images are relative path and not absolute otherwise they will not load.
+
+The link for this site is - https://joshuaandrews-1882.github.io/project-2/ 
