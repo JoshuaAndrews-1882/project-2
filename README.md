@@ -93,3 +93,13 @@ I thought a simple design was perfect for a simple game.
   - Ensure images are relative path and not absolute otherwise they will not load.
 
 The link for this site is - https://joshuaandrews-1882.github.io/project-2/ 
+
+## Credits
+
+### Content
+
+  - A guide on how to make the JS grab the button IDs when pressed was taken from [Ania Kubów on YouTube](https://www.youtube.com/watch?v=RwFeg0cEZvQ&t=450s).
+  - Instructions for a image popup modal was taken from [w3schools](https://www.w3schools.com/howto/howto_css_modal_images.asp).
+  - The game button icons were taken from [Font Awesome](https://fontawesome.com/).
+  - For fonts I used [Google Fonts](https://fonts.google.com/).
+  - For the title and rules image I used [Canva](https://www.canva.com/).
