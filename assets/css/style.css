@@ -75,6 +75,7 @@
     justify-content: space-around;
     margin: 10px 10px;
     width: 60px;
+    cursor: pointer;
 }
 
 .btn:active {
