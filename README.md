@@ -40,3 +40,8 @@ I thought a simple design was perfect for a simple game.
 ![Player Draws Round](assets/readme-images/resultdraw.png)
 ![Player Wins Game](assets/readme-images/wingame.png)
 ![Player Loses Game](assets/readme-images/lostgame.png)
+
+ - __Player Choice__
+   - The player has 5 choices to pick from, from left to right; Rock, Paper, Scissors, Lizard and Spock.
+   - When picked it will then be matched against a random computer choice.
+  ![Game Choices](assets/readme-images/choices.png)
