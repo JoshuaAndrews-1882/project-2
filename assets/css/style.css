@@ -88,23 +88,23 @@
 }
 
 .btn--rock {
-  background-image: url(../assets/images/rock.png);
+  background-image: url(assets/images/rock.png);
 }
 
 .btn--paper {
-  background-image: url(../assets/images/paper.png);
+  background-image: url(assets/images/paper.png);
 }
 
 .btn--scissors {
-  background-image: url(../assets/images/scissors.png);
+  background-image: url(assets/images/scissors.png);
 }
 
 .btn--lizard {
-  background-image: url(../assets/images/lizard.png);
+  background-image: url(assets/images/lizard.png);
 }
 
 .btn--spock {
-  background-image: url(../assets/images/spock.png);
+  background-image: url(assets/images/spock.png);
 }
 
 /* rules modal */
