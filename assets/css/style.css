@@ -54,7 +54,8 @@
     text-align: center;
     padding-left: 5px;
     padding-right: 5px;
-    font-size: 1.5rem;
+    font-size: 1rem;
+    padding-bottom: 30px;
 }
 
 /* buttons */
@@ -120,22 +121,41 @@
 
 @media screen and (min-width:345px) {
 .btn { 
-    height: 80px;
-    width: 80px;
+    height: 70px;
+    width: 70px;
+}
+
+.score-area {
+    display: flex;
+    justify-content: space-around;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+.result-area {
+    font-size: 1.5rem;
 }
 
 }
 
 @media screen and (min-width:410px) {
     .btn {
-        height: 70px;
-        width: 70px;
+        height: 80px;
+        width: 80px;
     }
 }
 
 @media screen and (min-width: 490px) {
     .btn {
-        height: 100px;
-        width: 100px;
+        height: 90px;
+        width: 90px;
+    }
+
+    .score-area {
+        font-size: 1.5rem;
+    }
+
+    .result-area {
+        font-size: 2rem;
     }
 }
