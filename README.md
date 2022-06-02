@@ -106,3 +106,10 @@ The link for this site is - https://joshuaandrews-1882.github.io/project-2/
 
   - The game button images were taken from [Font Awesome](https://fontawesome.com/).
   - For the title and rules image I used [Canva](https://www.canva.com/).
+
+## Future Improvements
+
+  - When a player makes a selection it only shows the button they clicked and the computers chosen button with the result and then reverts back.
+  - To store how many games they won instead of just rounds.
+  - To add different variants of Rock, Paper, Scissors so there is a choice.
+  - Makes the site more interactive.
