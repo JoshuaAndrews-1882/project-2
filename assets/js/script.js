@@ -3,6 +3,7 @@ const gameChoices = document.querySelectorAll('button');
 
 let pChoice;
 let cChoice;
+let winner = "";
 let won = 0;
 let lose = 0;
 
