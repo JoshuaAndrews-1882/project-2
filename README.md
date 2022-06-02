@@ -22,13 +22,13 @@ I thought a simple design was perfect for a simple game.
 
  - __Title__
 
-  - The title of the game is an image instead of text
+   - The title of the game is an image instead of text
 ![Game Title Image](assets/readme-images/title.png)
 
  - __Score Board__
 
-  - A score board that shows how many rounds the player has won and lost.
-  - The score resets to 0 when the score hits 10 and declares the winner.
+   - A score board that shows how many rounds the player has won and lost.
+   - The score resets to 0 when the score hits 10 and declares the winner.
 ![Score Board Image](assets/readme-images/scoreboard.png)
 
  - __Game Result__
