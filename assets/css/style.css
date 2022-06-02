@@ -4,8 +4,8 @@
 
 * {
     box-sizing: border-box;
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
 
@@ -22,10 +22,10 @@
 
 .title > img {
     display: block;
+    margin-left: auto;
+    margin-right: auto;
     max-height: 30vh;
     max-width: 90vw;
-    margin-right: auto;
-    margin-left: auto;
     position: relative;
     top: -10px;
 }
@@ -53,26 +53,26 @@
 /* result area */
 
 .result-area {
+    font-size: 1rem;
     letter-spacing: 1px;
     text-align: center;
     padding-left: 5px;
     padding-right: 5px;
-    font-size: 1rem;
 }
 
 /* buttons */
 
 .btn {
     background-color: darkgreen;
-    border-radius: 20%;
     border-color: transparent;
+    border-radius: 20%;
     box-shadow: 0 4px burlywood;
+    cursor: pointer;
     font-size: 3rem;
     height: 60px;
     justify-content: space-around;
     margin: 10px 10px;
     width: 60px;
-    cursor: pointer;
 }
 
 .btn:active {
@@ -127,14 +127,14 @@
 }
 
 .rules-size {
-    display: block;
-    height: 50px;
-    width: 50px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-top: 10px;
     border: 5px solid darkgreen;
     border-radius: 50%;
+    display: block;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    width: 50px;
 }
 
 .modal {
@@ -142,20 +142,20 @@
     display: none;
     height: 100%;
     left: 0;
+    overflow: auto;
     padding-top: 50px;
     position: fixed;
-    overflow: auto;
     top: 0;
-    z-index: 1;
     width: 100%;
+    z-index: 1;
 }
 
 .rules-content {
     display: block;
     height: 180px;
-    width: 180px;
-    margin-right: auto;
     margin-left: auto;
+    margin-right: auto;
+    width: 180px;
 }
 
 .rules-image {
@@ -163,24 +163,24 @@
 }
 
 #rules-header .rules-content {
-    animation-name: zoom;
     animation-duration: 0.8s;
+    animation-name: zoom;
 }
 
 .rules-close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
     color: green;
     font-size: 5rem;
     font-weight: bold;
+    position: absolute;
+    right: 35px;
+    top: 15px;
 }
 
 .rules-close:hover,
 .rules-close:focus {
     color: red;
-    text-decoration: none;
     cursor: pointer;
+    text-decoration: none;
 }
 
 /* media queries */
@@ -211,14 +211,14 @@
     .score-area {
         display: flex;
         justify-content: space-around;
-        padding-right: 30%;
         padding-left: 30%;
+        padding-right: 30%;
     }
 
     .rules-size {
         height: 100px;
-        width: 100px;
         padding-top: 22px;
+        width: 100px;
     }
 }
 
@@ -251,8 +251,8 @@
 
     .rules-size {
         height: 120px;
-        width: 120px;
         padding-top: 27px;
+        width: 120px;
     }
 
     .rules-content {
