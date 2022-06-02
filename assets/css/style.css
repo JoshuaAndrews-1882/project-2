@@ -127,9 +127,17 @@
 /* rules */
 
 #rules-game {
-    border-radius: 3px;
     cursor: pointer;
     transition: 0.4;
+}
+
+.rules-size {
+    display: block;
+    height: 80px;
+    width: 80px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 30px;
 }
 
 .modal {
