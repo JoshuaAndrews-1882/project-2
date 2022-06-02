@@ -136,7 +136,7 @@ function gameScore() {
 // declare who wins the game and reset
 function endGame() {
 	if (won === 10) {
-		document.getElementById('result').innerHTML = 'You win the game, click to play again!';
+		document.getElementById('result').innerHTML = 'You won the game, click to play again!';
 		document.getElementById('won').innerHTML = (won = 0);
 		document.getElementById('lose').innerHTML = (lose = 0);
 	}
