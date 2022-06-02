@@ -1,5 +1,3 @@
-const playerChoice = document.getElementById('player');
-const computerChoice = document.getElementById('computer');
 const gameResult = document.getElementById('result');
 const gameChoices = document.querySelectorAll('button');
 
@@ -7,18 +5,17 @@ let pChoice;
 let cChoice;
 let won = 0;
 let lose = 0;
-let result
 
 gameChoices.forEach(gameChoice => gameChoice.addEventListener('click', (e) => {
-    pChoice = e.target.id
-    getComputerChoice()
-    compareChoices()
-    gameScore()
-    endGame()
-}))
+    pChoice = e.target.id;
+    getComputerChoice();
+    compareChoices();
+    gameScore();
+    endGame();
+}));
 
 function getComputerChoice () {
-    const randomChoice = Math.floor(Math.random() * 5)
+    const randomChoice = Math.floor(Math.random() * 5);
 
     switch(randomChoice) {
         case 0:
@@ -36,7 +33,7 @@ function getComputerChoice () {
         case 4:
             cChoice = 'spock';
     }
-};
+}
 
 function compareChoices() {
     if (pChoice === cChoice) {
@@ -122,13 +119,13 @@ function compareChoices() {
         winner = "Spock is poisoned by the Lizard, you lose!";
         lose++;
     }
-    gameResult.innerHTML = winner
-};
+    gameResult.innerHTML = winner;
+}
 
 function gameScore() {
     document.getElementById('won').innerHTML = won;
     document.getElementById('lose').innerHTML = lose;
-};
+}
     
 function endGame() {
     if (won === 10) {
@@ -141,7 +138,7 @@ function endGame() {
             document.getElementById('won').innerHTML = (won = 0);
             document.getElementById('lose').innerHTML = (lose = 0);
     }  
-};
+}
 
 var modal = document.getElementById("rules-modal");
 
@@ -153,7 +150,7 @@ img.onclick = function(){
   modal.style.display = "block";
   modalImg.src = this.src;
   captionText.innerHTML = this.alt;
-}
+};
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("rules-close")[0];
@@ -161,4 +158,4 @@ var span = document.getElementsByClassName("rules-close")[0];
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
   modal.style.display = "none";
-}
+};
