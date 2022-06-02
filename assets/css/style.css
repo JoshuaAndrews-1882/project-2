@@ -13,8 +13,8 @@
 
 .wrapper {
     background: beige;
-    height: 100vh;
     font-family: 'Koulen', cursive;
+    height: 100vh;
     width: 100vw;
 }
 
@@ -49,6 +49,7 @@
 /* game area */
 
 .game-area {
+    background-color: beige;
     text-align: center;
 }
 
