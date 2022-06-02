@@ -54,3 +54,25 @@ I thought a simple design was perfect for a simple game.
   - No errors were found when checking on [w3c validator](http://jigsaw.w3.org/css-validator/validator?lang=en&profile=css3svg&uri=https%3A%2F%2Fjoshuaandrews-1882.github.io%2Fproject-2%2F&usermedium=all&vextwarning=&warning=1).
 - __CSS__
   - No errors were found when checking on [(Jigsaw) validator](http://jigsaw.w3.org/css-validator/validator?lang=en&profile=css3svg&uri=https%3A%2F%2Fjoshuaandrews-1882.github.io%2Fproject-2%2F&usermedium=all&vextwarning=&warning=1).
+
+  ### Page Speed
+
+#### Tested Mobile and Desktop Speed on [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)
+
+- __Mobile__
+
+  - Speed is good
+![Mobile Web Speed](assets/readme-images/mobile.png)
+
+
+- __Desktop__
+
+  - Speed is very good
+![Desktop Web Speed](assets/readme-images/desktop.png)
+
+### Personal Check
+  - Used a PC, tablet and a mobile to check the game and everything is good.
+
+### Unfixed Bugs
+
+  - No known bugs
