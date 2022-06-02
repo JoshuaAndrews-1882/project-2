@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Koulen&display=swap");
 
-/* css reset */
+/*css reset */
 
 * {
   box-sizing: border-box;
@@ -79,44 +79,31 @@
   transform: translateY(4px);
 }
 
-.btn--rock {
-  background-image: url(/assets/images/rock.png);
+.btn--design {
   background-repeat: no-repeat;
   background-size: cover;
   padding-left: 30px;
   padding-right: 30px;
+}
+
+.btn--rock {
+  background-image: url(/assets/images/rock.png);
 }
 
 .btn--paper {
   background-image: url(/assets/images/paper.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-left: 30px;
-  padding-right: 30px;
 }
 
 .btn--scissors {
   background-image: url(/assets/images/scissors.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-left: 30px;
-  padding-right: 30px;
 }
 
 .btn--lizard {
   background-image: url(/assets/images/lizard.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-left: 30px;
-  padding-right: 30px;
 }
 
 .btn--spock {
   background-image: url(/assets/images/spock.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-left: 30px;
-  padding-right: 30px;
 }
 
 /* rules */
