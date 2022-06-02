@@ -42,7 +42,7 @@ function getComputerChoice() {
 // compare choices and determine the winner
 function compareChoices() {
 	if (pChoice === cChoice) {
-		winner = "Stalemate, you picked the same";
+		winner = "Stalemate, you picked the same!";
 	}
 	if (pChoice === 'rock' && cChoice === 'paper') {
 		winner = "Rock is covered by Paper, you lose!";
