@@ -106,8 +106,8 @@
   background-image: url(/assets/images/spock.png);
 }
 
-/* rules */
-
+/* rules modal */
+/* credit to https://www.w3schools.com/howto/howto_css_modal_images.asp */
 #rules-game {
   cursor: pointer;
 }
@@ -169,7 +169,7 @@
   text-decoration: none;
 }
 
-/* media queries */
+/* media queries for various sizes */
 
 @media screen and (min-width: 345px) {
   .btn {

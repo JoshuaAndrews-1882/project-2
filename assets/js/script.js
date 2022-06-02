@@ -7,6 +7,8 @@ let winner = "";
 let won = 0;
 let lose = 0;
 
+// get player choice and run game
+// credit to Ania Kubów: https://www.youtube.com/watch?v=RwFeg0cEZvQ&t=449s
 gameChoices.forEach(gameChoice => gameChoice.addEventListener('click', (e) => {
 	pChoice = e.target.id;
 	getComputerChoice();
@@ -15,6 +17,7 @@ gameChoices.forEach(gameChoice => gameChoice.addEventListener('click', (e) => {
 	endGame();
 }));
 
+// generate random computer choice
 function getComputerChoice() {
 	const randomChoice = Math.floor(Math.random() * 5);
 
@@ -36,6 +39,7 @@ function getComputerChoice() {
 	}
 }
 
+// compare choices and determine the winner
 function compareChoices() {
 	if (pChoice === cChoice) {
 		winner = "Stalemate, you picked the same";
@@ -123,11 +127,13 @@ function compareChoices() {
 	gameResult.innerHTML = winner;
 }
 
+// declare who wins the round
 function gameScore() {
 	document.getElementById('won').innerHTML = won;
 	document.getElementById('lose').innerHTML = lose;
 }
 
+// declare who wins the game and reset
 function endGame() {
 	if (won === 10) {
 		document.getElementById('result').innerHTML = 'You win the game, click to play again!';
