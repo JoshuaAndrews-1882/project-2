@@ -16,7 +16,7 @@ The game was built for mobile usage firstly as most people use their phones to p
 I went for a design that the colours contrasts quite well and is easy on the eyes to look at.
 I thought a simple design was perfect for a simple game.
 
-![Amiresponsive Image](assets/readme-images/responsive)
+![Amiresponsive Image](assets/readme-images/responsive.png)
 
 ## Features
 
