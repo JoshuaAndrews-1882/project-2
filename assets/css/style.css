@@ -124,7 +124,6 @@
 
 #rules-game {
     cursor: pointer;
-    transition: 0.4;
 }
 
 .rules-size {
@@ -168,11 +167,6 @@
     animation-duration: 0.8s;
 }
 
-@keyframe zoom {
-    from {transform:scale(0)}
-    to {transform:scale(1)}
-}
-
 .rules-close {
     position: absolute;
     top: 15px;
@@ -180,7 +174,6 @@
     color: green;
     font-size: 5rem;
     font-weight: bold;
-    transition: 0.4;
 }
 
 .rules-close:hover,
