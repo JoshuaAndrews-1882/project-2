@@ -1,53 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <title>R.P.S.L.S</title>
+	<meta charset="UTF-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<link href="/assets/css/style.css" rel="stylesheet">
+	<title>R.P.S.L.S</title>
 </head>
 <body>
-
-    <div class="wrapper">
-        <div class="title">
-            <img src="/assets/images/title.png" alt="rock, paper, scissors, lizard, spock">  
-        </div>
-        <div class="game-area">             
-            <div class="score-area">
-                <p class="scores space">Won: <span id="won">0</span></p>
-                <p class="scores">Lost: <span id="lose">0</span></p>
-            </div> 
-
-            <div class="result-area">
-                </p><span id="result"></span>
-            </div> 
-
-            
-
-            <div class="choice-area">
-                <button class="btn btn--rock" id="rock">
-                </button>
-                <button class="btn btn--paper" id="paper">
-                </button>
-                <button class="btn btn--scissors" id="scissors">
-                </button>
-                <button class="btn btn--lizard" id="lizard">
-                </button>
-                <button class="btn btn--spock" id="spock">
-                </button>
-            </div>
-            <div class="rules-size">
-            <img id="rules-game" src="/assets/images/rules.png" style="width:100%;max-width:300px">
-            </div>
-                <div id="rules-modal" class="modal">
-                        <span class="rules-close">&times;</span>
-                        <div class="rules-image">
-                            <img class="rules-content" src="/assets/images/rules2.png">
-                        </div>
-                </div>
-    </div>
-</div>
-    <script src="/assets/js/script.js"></script>
+	<div class="wrapper">
+		<div class="title"><img alt="rock, paper, scissors, lizard, spock" src="/assets/images/title.png"></div>
+		<div class="game-area">
+			<div class="score-area">
+				<p class="scores space">Won: <span id="won">0</span></p>
+				<p class="scores">Lost: <span id="lose">0</span></p>
+			</div>
+			<div class="result-area">
+				<span id="result"></span>
+			</div>
+			<div class="choice-area">
+				<button class="btn btn--rock" id="rock"></button> <button class="btn btn--paper" id="paper"></button> <button class="btn btn--scissors" id="scissors"></button> <button class="btn btn--lizard" id="lizard"></button> <button class="btn btn--spock" id="spock"></button>
+			</div>
+			<div class="rules-size"><img alt="press to show rules" id="rules-game" src="/assets/images/rules.png" style="width:100%;max-width:300px"></div>
+			<div class="modal" id="rules-modal">
+				<span class="rules-close">&times;</span>
+				<div class="rules-image"><img alt="rules of the game" class="rules-content" src="/assets/images/rules2.png"></div>
+			</div>
+		</div>
+	</div>
+	<script src="/assets/js/script.js">
+	</script>
 </body>
 </html>

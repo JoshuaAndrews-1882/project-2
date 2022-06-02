@@ -130,12 +130,12 @@ function gameScore() {
 
 function endGame() {
 	if (won === 10) {
-		document.getElementById('result').innerHTML = 'You win the game';
+		document.getElementById('result').innerHTML = 'You win the game, click to play again!';
 		document.getElementById('won').innerHTML = (won = 0);
 		document.getElementById('lose').innerHTML = (lose = 0);
 	}
 	if (lose === 10) {
-		document.getElementById('result').innerHTML = 'You lost the game';
+		document.getElementById('result').innerHTML = 'You lost the game, click to play again!';
 		document.getElementById('won').innerHTML = (won = 0);
 		document.getElementById('lose').innerHTML = (lose = 0);
 	}
