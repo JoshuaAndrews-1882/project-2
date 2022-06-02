@@ -134,6 +134,8 @@
     margin-right: auto;
     margin-left: auto;
     padding-top: 10px;
+    border: 5px solid darkgreen;
+    border-radius: 50%;
 }
 
 .modal {
@@ -209,8 +211,8 @@
 
 @media screen and (min-width:410px) {
     .btn {
-        height: 80px;
-        width: 80px;
+        height: 120px;
+        width: 120px;
     }
 
     .score-area {
@@ -219,12 +221,18 @@
         padding-right: 30%;
         padding-left: 30%;
     }
+
+    .rules-size {
+        height: 100px;
+        width: 100px;
+        padding-top: 22px;
+    }
 }
 
 @media screen and (min-width: 490px) {
     .btn {
-        height: 90px;
-        width: 90px;
+        height: 140px;
+        width: 140px;
     }
 
     .score-area {
@@ -245,5 +253,16 @@
     .btn {
         height: 150px;
         width: 150px;
+    }
+
+    .rules-size {
+        height: 120px;
+        width: 120px;
+        padding-top: 27px;
+    }
+
+    .rules-content {
+        height: 600px;
+        width: 600px;
     }
 }
